@@ -20,10 +20,14 @@ Route::resource('crud', 'CrudController')->only([
 	'create', 'store'
 ]);
 */
+//rotas de visualização
 Route::get('crud', 'CrudController@show');
-Route::post('addcrud', 'CrudController@add');
-Route::put('upcrud', 'CrudController@up');
-Route::delete('/delcrud/{id}', 'CrudController@del');
 Route::get('createcrud', 'CrudController@create');
 Route::get('/editcrud/{id}', 'CrudController@editt');
+
+
+//rotas de processo
+Route::post('addcrud', 'CrudController@add');
+Route::put('upcrud/{id}', 'CrudController@up');
+Route::delete('/delcrud/{id}', 'CrudController@del');
 
