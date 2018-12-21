@@ -16,7 +16,7 @@ class CrudController extends Controller
            return view('crud', compact('vista'));
     }
 
-       public function create (){
+       public function cadastro (){
          //return "onde eu vejo o formulario de cadastro";listo
          return view('formcrud');
     }

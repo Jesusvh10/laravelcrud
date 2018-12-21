@@ -17,4 +17,8 @@ class Crud extends Model
     'share_price',
     'share_qty'
   ];
+
+protected $table = 'cruds';
+
+
 }
